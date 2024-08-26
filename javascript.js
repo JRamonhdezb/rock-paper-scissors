@@ -24,7 +24,7 @@ function getsComputerChoice() {
 // Store the value in humanChoice variable
 // Conditional statement to assign and return the choice of the user
 
-function getHumanChoice() {
+function getsHumanChoice() {
     let humanChoice = prompt("What is your choice: rock, paper or scissor", "rock");
     humanChoice = humanChoice.toLowerCase();
     if (humanChoice === "rock") {
@@ -79,6 +79,28 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+function playGame() {
+    for (let i = 0; i < 5; i++) {
+        const humanSelection = getsHumanChoice();
+        const computerSelection = getsComputerChoice();
+        console.log(`Round Number: ${i + 1}`);
+        let winner = playRound(humanSelection, computerSelection);
+        if (winner === 1) {
+            humanScore += 1; 
+            console.log(`Human score: ${humanScore}`);
+            console.log(`Computer score: ${computerScore}`);
+        } else {
+            computerScore += 1; 
+            console.log(`Human score: ${humanScore}`);
+            console.log(`Computer score: ${computerScore}`);
+        }
+    }
+    if (humanScore > computerScore) {
+        console.log("End Game, You are the winner");
+    } else {
+        console.log("End Game, Computer is the winner");
+    }
+}
 
 let humanScore = 0; 
 let computerScore = 0; 
