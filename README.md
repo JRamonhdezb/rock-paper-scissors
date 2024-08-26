@@ -1,1 +1,2 @@
 # rock-paper-scissors
+This is the first Javascript Project in the The Odin Project Curriculum. The goal os this project is build a "Rock, Paper and Scissors" game with all the knowledge from the Javascript lections.
