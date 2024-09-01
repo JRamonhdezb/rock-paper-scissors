@@ -24,8 +24,9 @@ function getsComputerChoice() {
 // Store the value in humanChoice variable
 // Conditional statement to assign and return the choice of the user
 
-function getsHumanChoice(choice) {
-    humanChoice = choice.toLowerCase();
+function getsHumanChoice() {
+    let humanChoice = prompt("What is your choice: rock, paper or scissor", "rock");
+    humanChoice = humanChoice.toLowerCase();
     if (humanChoice === "rock") {
         console.log("Player: rock"); 
         return "rock";
@@ -99,17 +100,13 @@ function playRound(humanChoice, computerChoice) {
 //         console.log("End Game, Computer is the winner");
 //     }
 // }
-
 // let humanScore = 0; 
 // let computerScore = 0; 
 // playGame();
-// Changes made it from lesson Revisiting Rock Paper Scissors
-
+// Revisiting Rock Paper Scissor lesson
 const buttons = document.querySelectorAll("button");
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
-        const humanSelection = getsHumanChoice(button.id);
-        const computerSelection = getsComputerChoice();
-        playRound(humanSelection, computerSelection);
+
     })
 })
