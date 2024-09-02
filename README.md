@@ -1,2 +1,4 @@
 # rock-paper-scissors
 This is the first Javascript Project in the The Odin Project Curriculum. The goal os this project is build a "Rock, Paper and Scissors" game with all the knowledge from the Javascript lections.
+
+After completing few javascript lessons, learned about DOM manipulation and events, so now this project wil have a simple user interface with text nodes and three buttons that will give the options of the game to the user. The text nodes will change info like thu human score, the computer score and who is the round winner. Finally it will appear a div node with a text who says which is the winner of the game after getting five points.
