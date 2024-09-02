@@ -50,6 +50,7 @@ function playRound(humanChoice, computerChoice) {
         } else if (computerChoice === "rock") {
             console.log("Draw!");
             div.textContent = "Draw!";
+            return null; 
         } else {
             console.log("You lose!, Paper beats Rock");
             div.textContent = `You lose!, ${computerChoice} beats ${humanChoice}`;
@@ -64,6 +65,7 @@ function playRound(humanChoice, computerChoice) {
         } else if (computerChoice === "paper") {
             console.log("Draw!");
             div.textContent = "Draw!";
+            return null; 
         } else {
             console.log("You lose!, Scissor beats Paper");
             div.textContent = `You lose!, ${computerChoice} beats ${humanChoice}`;
@@ -78,6 +80,7 @@ function playRound(humanChoice, computerChoice) {
         } else if (computerChoice === "scissor") {
             console.log("!Draw");
             div.textContent = "Draw!";
+            return null; 
         } else {
             console.log("You lose!, Rock beats Scissor");
             div.textContent = `You lose!, ${computerChoice} beats ${humanChoice}`;
@@ -103,6 +106,8 @@ function playGame(round, choice) {
             console.log(`Human score: ${humanScore}`);
             console.log(`Computer score: ${computerScore}`);
             div1.textContent = `Human score: ${humanScore} | Computer score: ${computerScore}`;
+            break; 
+        } else {
             break; 
         }
         
